@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Exercício 5 - Versão colorida</title>
+    <style>
+        #quadrado {
+            width: 150px;
+            height: 150px;
+            background-color: lightgray; /* Cinza claro */
+            margin: 100px auto;
+            transition: background-color 0.3s; /* Suavizar a troca de cor */
+        }
+    </style>
+</head>
+<body>
+    <div id="quadrado" onmouseover="mudarCor()" onmouseout="voltarCor()"></div>
+
+    <script>
+    function mudarCor() {
+        document.getElementById("quadrado").style.backgroundColor = "cyan"; // Cor de ciano
+    }
+    function voltarCor() {
+        document.getElementById("quadrado").style.backgroundColor = "lightgray";
+    }
+    </script>
+</body>
+</html>
